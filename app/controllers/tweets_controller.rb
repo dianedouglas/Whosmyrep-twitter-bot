@@ -7,7 +7,7 @@ class TweetsController < ApplicationController
     config.access_token = '150020012-4hL0oIa1EBTpFOm8fMuBsWUWXGK0FD0H9sKuuQG7'
     config.access_token_secret = 'mFGxqNFPYmh0Vkom2ernzpcuOzpIEblyV7JAswJ6BA7KS'
     end
-    @keebztweets = client.user_timeline("djkeebz")
+    @mentions = client.mentions_timeline
   end
 
 end
